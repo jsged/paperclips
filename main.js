@@ -27,6 +27,11 @@ function sendCommand() {
     }
 }
 
+function test() {
+    var confirm = document.getElementById("confirmBox")
+    confirm.style.display = "block"
+}
+
 function confirmyes() {
     var showcheats = document.getElementById("showCheats")
     var confirm = document.getElementById("confirmBox")
