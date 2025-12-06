@@ -293,7 +293,18 @@
 
            
 
-        <button class = "button2" id="showSaves" onclick="showSaves()">Save Menu</button>
+        <button class = "button2" id="showSaves" onclick="showSaves()">Save Menu</button><br>
+
+        <input type="text" id="command" name="command">
+        <button class = "button2" id="sendCommand" onclick="sendCommand()">></button><br>
+
+        <div class="confirmBox" id="confirmBox">
+            <p>Are You SURE You Want To Become A <b>CHEATER</b>?</p><br>
+            <button class = "buttondanger" id="confirmYes">Yes</button>
+            <p> </p>
+            <button class = "button2" id="confirmNo">Nope.</button>
+        </div><br>
+
 
         <div id="saveButtons">
             <button class ="button2" id ="save1Button" onclick="save1()">SAVE SLOT 1</button>
@@ -303,20 +314,27 @@
             <button class ="buttondanger" id ="resetButton" onclick="reset()">RESET ALL PROGRESS</button><br />       
         </div><br>
 
-        <button class ="button2" id ="freeClipsButton" onclick="cheatClips()">Free Clips</button><br />    
-        <button class ="button2" id ="freeMoneyButton" onclick="cheatMoney()">Free Money</button><br />
-        <button class ="button2" id ="freeTrustButton" onclick="cheatTrust()">Free Trust</button><br />        
-        <button class ="button2" id ="freeOpsButton" onclick="cheatOps()">Free Ops</button><br />
-        <button class ="button2" id ="freeCreatButton" onclick="cheatCreat()">Free Creativity</button><br />
-        <button class ="button2" id ="freeYomiButton" onclick="cheatYomi()">Free Yomi</button><br />    
-        <button class ="button2" id ="resetPrestige" onclick="resetPrestige()">Reset Prestige</button><br />     
-            
-        <button class ="button2" id ="destroyAllHumansButton" onclick="cheatHypno()">Destroy all Humans</button><br />    
-        <button class ="button2" id ="freePrestigeU" onclick="cheatPrestigeU()">Free Prestige U</button>
-        <button class ="button2" id ="freePrestigeS" onclick="cheatPrestigeS()">Free Prestige S</button>
-        <button class ="button2" id ="debugBattleNumbers" onclick="setB()">Set Battle Number 1 to 7</button><br /> 
-        <button class ="button2" id ="availMatterZero" onclick="zeroMatter()">Set Avail Matter to 0</button><br />     
+        <p> </p><br>
 
+        <div id="showCheats">
+            <button class="buttondanger" id="showCheatButtons" onclick="cheatsShow()">Cheat Menu</button>
+        </div>
+
+        <div id="cheatButtons">
+            <button class ="button2" id ="freeClipsButton" onclick="cheatClips()">Free Clips</button><br />    
+            <button class ="button2" id ="freeMoneyButton" onclick="cheatMoney()">Free Money</button><br />
+            <button class ="button2" id ="freeTrustButton" onclick="cheatTrust()">Free Trust</button><br />        
+            <button class ="button2" id ="freeOpsButton" onclick="cheatOps()">Free Ops</button><br />
+            <button class ="button2" id ="freeCreatButton" onclick="cheatCreat()">Free Creativity</button><br />
+            <button class ="button2" id ="freeYomiButton" onclick="cheatYomi()">Free Yomi</button><br />    
+            <button class ="buttondanger" id ="resetPrestige" onclick="resetPrestige()">Reset Prestige</button><br />     
+                
+            <button class ="buttondanger" id ="destroyAllHumansButton" onclick="cheatHypno()">Destroy all Humans</button><br />    
+            <button class ="button2" id ="freePrestigeU" onclick="cheatPrestigeU()">Free Prestige U</button>
+            <button class ="button2" id ="freePrestigeS" onclick="cheatPrestigeS()">Free Prestige S</button>
+            <button class ="button2" id ="debugBattleNumbers" onclick="setB()">Set Battle Number 1 to 7</button><br /> 
+            <button class ="button2" id ="availMatterZero" onclick="zeroMatter()">Set Avail Matter to 0</button><br />     
+        </div><br>
 
 
 

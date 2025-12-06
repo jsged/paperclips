@@ -3,6 +3,59 @@
 function pageLoad() {
     var savebuttons = document.getElementById("saveButtons")
     savebuttons.style.display = "none"
+
+    var cheatbuttons = document.getElementById("cheatButtons")
+    cheatbuttons.style.display = "none"
+
+    var showcheats = document.getElementById("showCheats")
+    showcheats.style.display = "none"
+
+    var confirm = document.getElementById("confirmBox")
+    confirm.style.display = "none"
+}
+
+// Send Command From Box --------------------------------------------
+
+function sendCommand() {
+    var command = document.getElementById("command")
+    var confirm = document.getElementById("confirmBox")
+    if (command.innerHTML == "cheat") {
+        confirm.style.display = "block"
+    } else {
+        confirm.style.display = "none"
+        command.innerHTML = ""
+    }
+}
+
+function confirmyes() {
+    var showcheats = document.getElementById("showCheats")
+    var confirm = document.getElementById("confirmBox")
+
+    confirm.style.display = "none"
+    showcheats.style.display = "block"
+}
+
+function confirmno() {
+    var confirm = document.getElementById("confirmBox")
+
+    confirm.style.display = "none"
+}
+
+// Cheat Menu ------------------------------------------------------
+
+function cheatsShow() {
+  var x = document.getElementById("cheatButtons");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var y = document.getElementById("showCheatButtons");
+  if (x.style.display === "block") {
+    y.innerHTML = "Close Cheat Menu";
+  } else {
+    y.innerHTML = "Cheat Menu"
+  }
 }
 
 // Threnody ---------------------------------------------------------

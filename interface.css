@@ -847,3 +847,11 @@ p.hypnoDrone {
    
    color: #7e0404;
 }
+
+.confirmBox {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: #000000;
+    border-width: 2px;
+}
