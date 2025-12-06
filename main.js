@@ -1,3 +1,10 @@
+// Upon Page Load --------------------------------------------------
+
+function pageLoad() {
+    var savebuttons = document.getElementById("saveButtons")
+    savebuttons.style.display = "none"
+}
+
 // Threnody ---------------------------------------------------------
 
 function threnodyLoaded()
