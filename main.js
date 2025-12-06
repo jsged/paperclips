@@ -17,6 +17,23 @@ function playThrenody(){
     }
 }
 
+// Show Save Buttons -------------------------------------------
+
+function showSaves() {
+  var x = document.getElementById("saveButtons");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var y = document.getElementById("showSaves");
+  if (x.style.display === "block") {
+    y.innerHTML = "Close Save Menu";
+  } else {
+    y.innerHTML = "Save Menu"
+  }
+}
+
 
 // Wire --------------------------------------------------------
 
