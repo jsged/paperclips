@@ -17,9 +17,9 @@ function pageLoad() {
 // Send Command From Box --------------------------------------------
 
 function sendCommand() {
-    var command = document.getElementById("command")
+    var command = document.getElementById("command").value
     var confirm = document.getElementById("confirmBox")
-    if (command.innerHTML == "cheat") {
+    if (command.includes == "cheat") {
         confirm.style.display = "block"
     } else {
         confirm.style.display = "none"
