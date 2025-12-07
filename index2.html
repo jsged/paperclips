@@ -28,7 +28,7 @@
                 <span>&nbsp;.&nbsp;</span><span id="readout2"></span><br />
             </p>
             <p class = "console"> 
-                <span>&nbsp;>&nbsp;</span><span id="readout1">Welcome to <strike>Horse Killing</strike>Glue Stick Factory</span><span id="cursor" class = "pulsate">|</span>
+                <span>&nbsp;>&nbsp;</span><span id="readout1">Welcome to <strike>Horse Killing</strike> Glue Stick Factory</span><span id="cursor" class = "pulsate">|</span>
             </p>
             
         </div> 
@@ -41,15 +41,17 @@
             
             </div>        
         <div class = "toolTip">
-        <span id = "clipCountCrunched" class = "toolTipText">total clips produced</span>    
-        <h2>Paperclips: <span id="clips">0</span></h2>
+        <span id = "clipCountCrunched" class = "toolTipText">total glues produced</span>    
+        <h2>Glue Sticks: <span id="clips">0</span></h2>
         </div>
             
         </div>    
             
         <div id="leftColumn">
         
-        <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1)">Make Paperclip</button><br />
+        <button class = "button2" id ="btnMakePaperclip" onclick="clipClick(1)">Make Glue Stick</button><br />
+        <br>
+        <text style="color:gray;"><i>this DEFINETLY does not kill a horse</i></text>
         <br />
         
         <div id = "creationDiv">
@@ -63,11 +65,11 @@
         </div>  
         
         <div id = "clipsPerSecDiv">
-        Clips per Second: <span id="clipmakerRate2">0</span><br />
+        Glues per Second: <span id="clipmakerRate2">0</span><br />
         </div>        
         
         <div id = "tothDiv">    
-        Unused Clips: <span id="unusedClipsDisplay">0</span><br />
+        Unused <strike>Horse Bones</strike> Glues: <span id="unusedClipsDisplay">0</span><br />
         </div>
         <br /> 
            
@@ -75,7 +77,7 @@
         <div id = "factoryDiv">
         <p class = "engineText5">
         <button class = "button2" id = "btnMakeFactory"
-        onclick="makeFactory()">Clip Factory</button> <span class = "engineText6" id="factoryLevelDisplay">0</span></p>
+        onclick="makeFactory()">Glue Stick Factory</button> <span class = "engineText6" id="factoryLevelDisplay">0</span></p>
             
         <div class = "toolTip3">    
             
@@ -240,7 +242,7 @@
         onclick="lowerPrice()">lower</button>
         <button class = "button2" id = "btnRaisePrice"
         onclick="raisePrice()">raise</button>
-        Price per Clip: $ <span id="margin">.25</span><br />
+        Price per Glue Stick: $ <span id="margin">.25</span><br />
             
         Public Demand: <span id="demand">10</span>%<br />
         <br />    
@@ -258,7 +260,7 @@
         <b>Manufacturing</b><br />
         <hr>
         
-        Clips per Second: <span id="clipmakerRate">0</span><br />
+        Glues per Second: <span id="clipmakerRate">0</span><br />
         <br /> 
             
         <div id = "wireBuyerDiv">
@@ -268,14 +270,14 @@
           
             
         <button class = "button2" id ="btnBuyWire"
-        onclick="buyWire()">Wire</button> <span class = "engineText6" id="wire">1000</span><span class = "engineText6"> inches</span><br /> 
+        onclick="buyWire()">Horse Bones</button> <span class = "engineText6" id="wire">1000</span><span class = "engineText6"> inches</span><br /> 
         Cost: $ <span id="wireCost">20</span><br />
         <br />
             
         <div id = "autoClipperDiv">
         <p class = "engineText5">
         <button class = "button2" id = "btnMakeClipper"
-        onclick="makeClipper()">AutoClippers</button> <span class = "engineText6" id="clipmakerLevel2">0</span></p>
+        onclick="makeClipper()">AutoCrushers</button> <span class = "engineText6" id="clipmakerLevel2">0</span></p>
         Cost: $ <span id="clipperCost">5.00</span><br />
         <br />
         </div>    
@@ -283,7 +285,7 @@
         <div id = "megaClipperDiv">
         <p class = "engineText5">
         <button class = "button2" id = "btnMakeMegaClipper"
-        onclick="makeMegaClipper()">MegaClippers</button> <span class = "engineText6" id="megaClipperLevel">0</span></p>
+        onclick="makeMegaClipper()">MegaBoneCrushers</button> <span class = "engineText6" id="megaClipperLevel">0</span></p>
         Cost: $ <span id="megaClipperCost">500</span><br />
         </div>    
                   
@@ -291,15 +293,12 @@
 
         <br />
 
-           
-
-        <button class = "button2" id="showSaves" onclick="showSaves()">Save Menu</button><br>
-
         <div class="CommandBox" id="commandBox">
             <text>Command Box:</text>
             <input type="text" id="command" name="command"></input>
             <button class = "button2" id="sendCommand" onclick="sendCommand()">></button><br>
-        </div><br>
+        </div>
+        <br />
 
         <div class="confirmBox" id="confirmBox">
             <p>Are You SURE You Want To Become A <b>CHEATER</b>?</p><br>
@@ -307,6 +306,8 @@
             <p> </p>
             <button class = "button2" id="confirmNo" onclick="confirmno()">Nope.</button>
         </div><br>
+
+        <button class = "button2" id="showSaves" onclick="showSaves()">Save Menu</button><br>
 
 
         <div id="saveButtons">
@@ -324,7 +325,7 @@
         </div>
 
         <div id="cheatButtons">
-            <button class ="button2" id ="freeClipsButton" onclick="cheatClips()">Free Clips</button><br />    
+            <button class ="button2" id ="freeClipsButton" onclick="cheatClips()">Free Glue Sticks</button><br />    
             <button class ="button2" id ="freeMoneyButton" onclick="cheatMoney()">Free Money</button><br />
             <button class ="button2" id ="freeTrustButton" onclick="cheatTrust()">Free Trust</button><br />        
             <button class ="button2" id ="freeOpsButton" onclick="cheatOps()">Free Ops</button><br />
