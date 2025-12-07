@@ -859,8 +859,12 @@ p.hypnoDrone {
 .commandBox {
     align-items: center;
     padding: 10px;
-    border: 1px solid #000000;
+    border: 1px solid gray;
 }
 
 text {
+}
+
+strike {
+    text-decoration: line-through;
 }
