@@ -855,3 +855,9 @@ p.hypnoDrone {
     border: #000000;
     border-width: 2px;
 }
+
+.commandBox {
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #000000;
+}
