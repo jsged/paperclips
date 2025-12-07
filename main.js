@@ -24,8 +24,7 @@ function sendCommand() {
     } else {
         confirm.style.display = "none"
     }
-    
-    FormData.reset();
+    command.value="";
     event.preventDefault();
 
 }
