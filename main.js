@@ -17,13 +17,13 @@ function pageLoad() {
 // Send Command From Box --------------------------------------------
 
 function sendCommand() {
-    var command = document.getElementById("command").value
-    var confirm = document.getElementById("confirmBox")
-    if (command.includes == "cheat") {
+    var command = document.querySelector("#command");
+    var confirm = document.getElementById("confirmBox");
+    if (command.value === "cheat") {
         confirm.style.display = "block"
     } else {
         confirm.style.display = "none"
-        command.innerHTML = ""
+        command.value = ""
     }
 }
 
