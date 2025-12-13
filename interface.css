@@ -158,11 +158,16 @@ h2 {
     opacity: 1;
 }
 
-#buttonArea {
+#topArea {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 100px;
+}
+
+#clickButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
