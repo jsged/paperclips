@@ -158,6 +158,15 @@ h2 {
     opacity: 1;
 }
 
+.buttonArea {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+}
+
 
 #cover {
     position:fixed;
